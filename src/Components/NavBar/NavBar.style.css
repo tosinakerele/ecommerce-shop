@@ -1,0 +1,30 @@
+header,
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: medium;
+}
+ul li {
+    padding: 0 10px;
+    line-height: 1.3em;
+}
+div.logo {
+  float: left;
+}
+li a {
+  transition: scale ease-in-out 1000ms;
+}
+li a:hover {
+  color: #084866;
+  font-weight: bold;
+  transform: scale(1.01);
+  transform-origin: left;
+  transition: scale ease-in-out 1000ms;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
+  header {
+    display: none;
+  }
+}

@@ -1,0 +1,76 @@
+section#contact-form {
+  background-image: url("../../Assets/Images/pexels-godisable-jacob-1252982.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: cover;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr;
+  padding: 0 4vw;
+}
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#contact-form form input,
+#contact-form form button {
+  outline: 0;
+  border: 0;
+  margin: 5px 0;
+  padding: 6px;
+  width: 222px;
+}
+#contact-form form h2 {
+  font-weight: 400;
+  font-size: 3.5rem;
+  font-family: "Cormorant", serif;
+  margin-bottom: 30px;
+}
+#contact-form form label {
+  margin-right: 20px;
+  font-weight: bold;
+}
+#contact-form form label.email {
+  margin-right: 24px;
+}
+#contact-form form button {
+  background-color: #084866;
+  color: white;
+  cursor: pointer;
+  padding: 12px 0;
+  font-size: 1.15em;
+  margin-left: 70px;
+  width: 235px;
+  transition: width ease 500ms;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  section#contact-form {
+    display: block;
+    background-position: 50% 10%;
+    padding: 30vw 4vw;
+    height: unset;
+  }
+  #contact-form form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+  }
+  #contact-form form button {
+    margin-left: 0;
+    width: 100%;
+    background-repeat: 3px;
+    transition: all ease 500ms;
+  }
+  #contact-form form div {
+    display: flex;
+    align-items: center;
+  }
+
+  #contact-form form h2 {
+    font-size: 2.5rem;
+    line-height: 2.3rem;
+    font-family: "Cormorant", serif;
+    margin-bottom: 30px;
+  }
+}

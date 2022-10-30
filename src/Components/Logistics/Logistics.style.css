@@ -1,0 +1,62 @@
+h2.fast-en-reliable {
+  font-family: "Cormorant", serif;
+  font-size: 3.5rem;
+  font-weight: normal;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(-1);
+  margin-top: 30px;
+}
+p.fast-en-reliabled,
+p.fast-en-reliabled ~ p {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  font-size: 15px;
+  line-height: 1.5rem;
+}
+section.logistics {
+  display: grid;
+  padding: 4vw;
+  height: 70vh;
+  background: url("https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-end;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  section.logistics {
+    display: block;
+    padding: 20vw 4vw;
+    height: unset;
+    background-size: cover;
+    background-position: center;
+  }
+  section.logistics div {
+    background: #f3f3f3;
+    padding: 10vw 4vw;
+    filter: blur(0);
+    border-radius: 5px;
+  }
+  h2.fast-en-reliable {
+    font-size: 2.5rem;
+  }
+}
