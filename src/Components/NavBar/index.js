@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavBar.style.css";
 import { BiSearch, BiHeart, BiShoppingBag } from "react-icons/bi";
+import { MdMenu, MdOutlineClose } from "react-icons/md";
 
 const NavBar = () => {
+  const [open, setOpen] = useState(false);
+  const handleToggle = () => {
+    setOpen((open) => !open);
+  };
   return (
     <header>
-      <div className="logo">LOGO</div>
+      <div className="logo">
+        <h4>LOGO</h4>
+      </div>
       <nav>
         <ul>
           <li>
@@ -21,6 +28,16 @@ const NavBar = () => {
             <a href="#">address</a>
           </li>
         </ul>
+      </nav>
+
+      <nav className="mobile_menu">
+        <span className={!open ? "close" : "open"} onClick={handleToggle}>
+          <MdOutlineClose size={25} />
+        </span>
+        <span className={!open ? "open" : "close"} onClick={handleToggle}>
+          {" "}
+          <MdMenu size={25} />
+        </span>
       </nav>
 
       <nav>

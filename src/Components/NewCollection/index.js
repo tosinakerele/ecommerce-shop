@@ -45,7 +45,7 @@ export const NewCollection = () => {
                 <span className="price-tag">$ {product.price}</span>
                 <span>
                   <span>
-                    <BsHandbag size={18} spacing={200}/>
+                    <BsHandbag size={18} spacing={200} />
                   </span>
                   <span>
                     <CiHeart size={18} />
@@ -55,6 +55,26 @@ export const NewCollection = () => {
             </div>
           );
         })}
+      </div>
+      <div className="help_girls">
+        <article>
+          {" "}
+          <h2>we help girls find their own style</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea rerum
+            neque sed praesentium, voluptate eum. Magni, ad ducimus ab
+            doloremque earum numquam consequatur delectus, quibusdam praesentium
+            porro alias enim est?
+          </p>
+          <br />
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequuntur nobis, possimus dolores odit alias maiores. Unde obcaecati officia assumenda.</p>
+        </article>
+        <div className="help_girls_image">
+          <img
+            src="https://images.pexels.com/photos/3965548/pexels-photo-3965548.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=""
+          />
+        </div>
       </div>
     </section>
   );

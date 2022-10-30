@@ -39,7 +39,7 @@ h1#main_text {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: all ease 500s;
+  transition: all ease 500ms;
 }
 .video__new-collection span:hover {
   transition: all ease 500ms;
@@ -47,4 +47,39 @@ h1#main_text {
 }
 .video__new-collection span + p {
   margin-left: 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  p#contact_number {
+    position: absolute;
+    top: 5vw;
+    right: 4vw;
+  }
+  .container {
+    background-position: center 11em;
+    background-size: contain;
+    transition: all ease 800ms;
+  }
+  h1#main_text {
+    font-size: 2em;
+    line-height: 1.5rem;
+    top: 165px;
+    bottom: unset;
+    transition: all ease 800ms;
+  }
+  .video__new-collection span {
+    height: 20px;
+    width: 20px;
+    padding: 1px;
+    border: 8px solid #c8c8c8;
+    transition: all ease 800ms;
+  }
+  .video__new-collection span svg {
+    height: 15px;
+    width: 15px;
+  }
+  .video__new-collection span + p {
+    margin-left: 10px;
+    font-size: 13px;
+  }
 }
