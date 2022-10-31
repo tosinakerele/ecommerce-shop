@@ -11,8 +11,10 @@ export const NewCollection = () => {
     <section id="catalog">
       <h2>new collection</h2>
       <div className="nav_menu">
-        <span className="left-arrow">&larr;</span>
-        <span className="right-arrow">&rarr;</span>
+        <div className="nav_arrows">
+          <span className="left-arrow">&larr;</span>
+          <span className="right-arrow">&rarr;</span>
+        </div>
         <nav>
           <ul>
             <li>
