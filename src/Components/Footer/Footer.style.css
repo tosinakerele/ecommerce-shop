@@ -50,7 +50,6 @@ p.phone_number {
     display: block;
     padding: 0;
     transition: all 0.8ms ease;
-    
   }
   footer nav ul li {
     padding: 3px 0;
@@ -67,16 +66,17 @@ p.phone_number {
     margin: 0 5px;
   }
   .footer_grid {
-  display: grid;
-  grid-template-columns: 0.5fr 0.58fr 0.5fr;
-  margin: 20px 0 0; }
-  footer nav + nav ul li:last-child{
+    display: grid;
+    grid-template-columns: 0.5fr 0.58fr 0.5fr;
+    margin: 20px 0 0;
+  }
+  footer nav + nav ul li:last-child {
     margin-right: 0;
   }
   footer nav + nav {
     position: absolute;
     right: 4vw;
-    top: calc(15vw + 30px + 18.5px)
+    top: calc(15vw + 30px + 18.5px);
   }
   div.logo {
     transition: all 0.8ms ease;
@@ -84,6 +84,6 @@ p.phone_number {
     margin-bottom: 30px;
   }
   .footer_grid p {
-  line-height: 1.5rem;
-}
+    line-height: 1.5rem;
+  }
 }
